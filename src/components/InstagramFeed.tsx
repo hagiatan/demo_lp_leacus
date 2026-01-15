@@ -52,7 +52,7 @@ export default function InstagramFeed() {
                     <button
                         onClick={prevSlide}
                         disabled={currentIndex === 0}
-                        className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[var(--foreground)] transition-all duration-300 ${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:scale-110'}`}
+                        className={`hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white shadow-lg items-center justify-center text-[var(--foreground)] transition-all duration-300 ${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:scale-110'}`}
                     >
                         <ChevronLeft size={20} />
                     </button>
@@ -60,12 +60,12 @@ export default function InstagramFeed() {
                     <button
                         onClick={nextSlide}
                         disabled={currentIndex === maxIndex}
-                        className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-[var(--foreground)] transition-all duration-300 ${currentIndex === maxIndex ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:scale-110'}`}
+                        className={`hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white shadow-lg items-center justify-center text-[var(--foreground)] transition-all duration-300 ${currentIndex === maxIndex ? 'opacity-0 pointer-events-none' : 'opacity-100 hover:scale-110'}`}
                     >
                         <ChevronRight size={20} />
                     </button>
 
-                    <div className="overflow-hidden">
+                    <div className="hidden md:block overflow-hidden">
                         <motion.div
                             className="flex gap-6"
                             animate={{ x: `-${currentIndex * (100 / visibleItems)}%` }}
@@ -74,7 +74,7 @@ export default function InstagramFeed() {
                             {posts.map((post) => (
                                 <div
                                     key={post.id}
-                                    className="min-w-[100%] md:min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] flex-shrink-0 group/insta cursor-pointer"
+                                    className="min-w-[calc(50%-12px)] lg:min-w-[calc(25%-18px)] flex-shrink-0 group/insta cursor-pointer"
                                 >
                                     <div className="relative aspect-square overflow-hidden bg-[var(--section-bg)]">
                                         <Image
@@ -90,6 +90,28 @@ export default function InstagramFeed() {
                                 </div>
                             ))}
                         </motion.div>
+                    </div>
+
+                    {/* Mobile Scroll View */}
+                    <div className="flex md:hidden overflow-x-auto gap-4 pb-4 snap-x snap-mandatory -mx-6 px-6 scrollbar-hide">
+                        {posts.map((post) => (
+                            <div
+                                key={post.id}
+                                className="min-w-[80vw] flex-shrink-0 snap-center group/insta cursor-pointer"
+                            >
+                                <div className="relative aspect-square overflow-hidden bg-[var(--section-bg)]">
+                                    <Image
+                                        src={post.image}
+                                        alt={post.caption}
+                                        fill
+                                        className="object-cover transition-transform duration-700"
+                                    />
+                                    <div className="absolute inset-0 bg-black/40 absolute flex items-end p-6">
+                                        <p className="text-white text-sm font-medium">#{post.caption.replace(/ /g, '')}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

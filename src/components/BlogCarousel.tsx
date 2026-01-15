@@ -126,7 +126,7 @@ export default function BlogCarousel() {
                     <button
                         onClick={prevSlide}
                         disabled={currentIndex === 0}
-                        className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center text-[var(--foreground)] transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hover:scale-110`}
+                        className={`hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[var(--foreground)] transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hover:scale-110`}
                     >
                         <ChevronLeft size={24} />
                     </button>
@@ -134,13 +134,13 @@ export default function BlogCarousel() {
                     <button
                         onClick={nextSlide}
                         disabled={currentIndex >= maxIndex}
-                        className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center text-[var(--foreground)] transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hover:scale-110`}
+                        className={`hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-white shadow-xl items-center justify-center text-[var(--foreground)] transition-all duration-300 disabled:opacity-0 disabled:pointer-events-none hover:scale-110`}
                     >
                         <ChevronRight size={24} />
                     </button>
 
 
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden hidden md:block">
                         <motion.div
                             className="flex gap-8"
                             animate={{ x: `calc(-${currentIndex} * (100% + 32px) / ${visibleItems})` }}
@@ -149,7 +149,7 @@ export default function BlogCarousel() {
                             {posts.map((post) => (
                                 <div
                                     key={post.id}
-                                    className="w-full md:w-[calc(50%-16px)] lg:w-[calc((100%-64px)/3)] flex-shrink-0 group/card cursor-pointer"
+                                    className="w-[calc((100%-64px)/3)] flex-shrink-0 group/card cursor-pointer"
                                 >
                                     <div className="relative aspect-[3/2] overflow-hidden mb-6 bg-[var(--section-bg)]">
                                         <Image
@@ -158,13 +158,12 @@ export default function BlogCarousel() {
                                             fill
                                             className="object-cover transition-transform duration-700 group-hover/card:scale-105"
                                         />
-                                        {/* Play icon overlay style from reference */}
                                         <div className="absolute inset-0 bg-black/10 group-hover/card:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover/card:opacity-100 duration-300">
                                             <PlayCircle className="text-white w-12 h-12 opacity-80" strokeWidth={1.5} />
                                         </div>
                                     </div>
 
-                                    <div className="flex flex-col h-[180px]"> {/* Fixed height container for text uniformity */}
+                                    <div className="flex flex-col h-[180px]">
                                         <div className="mb-3">
                                             <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[var(--text-secondary)]">
                                                 {post.category}
@@ -183,6 +182,39 @@ export default function BlogCarousel() {
                                 </div>
                             ))}
                         </motion.div>
+                    </div>
+
+                    {/* Mobile Scrollable View */}
+                    <div className="flex md:hidden overflow-x-auto gap-4 pb-4 snap-x snap-mandatory -mx-6 px-6 scrollbar-hide">
+                        {posts.map((post) => (
+                            <div
+                                key={post.id}
+                                className="w-[85vw] flex-shrink-0 snap-center group/card cursor-pointer"
+                            >
+                                <div className="relative aspect-[3/2] overflow-hidden mb-6 bg-[var(--section-bg)]">
+                                    <Image
+                                        src={post.image}
+                                        alt={post.title}
+                                        fill
+                                        className="object-cover transition-transform duration-700"
+                                    />
+                                </div>
+
+                                <div className="flex flex-col">
+                                    <div className="mb-3">
+                                        <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[var(--text-secondary)]">
+                                            {post.category}
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-serif text-[var(--foreground)] leading-tight mb-3 line-clamp-2">
+                                        {post.title}
+                                    </h3>
+                                    <p className="text-xs text-[var(--text-secondary)] mb-2">
+                                        {post.date}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
 

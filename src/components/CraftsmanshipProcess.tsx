@@ -145,6 +145,17 @@ export default function CraftsmanshipProcess() {
                         return (
                             <motion.div
                                 key={step.id}
+                                drag="x"
+                                dragConstraints={{ left: 0, right: 0 }}
+                                onDragEnd={(e, { offset, velocity }) => {
+                                    const swipe = Math.abs(offset.x) * velocity.x;
+
+                                    if (swipe < -10000) {
+                                        nextSlide();
+                                    } else if (swipe > 10000) {
+                                        prevSlide();
+                                    }
+                                }}
                                 initial={false}
                                 animate={{
                                     x: xOff,
@@ -153,12 +164,12 @@ export default function CraftsmanshipProcess() {
                                     zIndex: zIndex
                                 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                                className="absolute top-0 left-0 right-0 mx-auto w-[80%] md:w-[60%] lg:w-[50%] h-full bg-white shadow-2xl rounded-sm overflow-hidden flex flex-col"
+                                className="absolute top-0 left-0 right-0 mx-auto w-[85%] md:w-[60%] lg:w-[50%] h-full bg-white shadow-2xl rounded-sm overflow-hidden flex flex-col touch-pan-y"
                                 style={{
                                     transformOrigin: 'center center'
                                 }}
                             >
-                                <div className="relative h-[65%] w-full bg-[var(--section-bg)]">
+                                <div className="relative h-[65%] w-full bg-[var(--section-bg)] pointer-events-none">
                                     <Image
                                         src={step.image}
                                         alt={step.title}
@@ -169,7 +180,7 @@ export default function CraftsmanshipProcess() {
                                         Step 0{step.id}
                                     </div>
                                 </div>
-                                <div className="flex-1 p-6 md:p-8 flex flex-col justify-center items-center text-center">
+                                <div className="flex-1 p-6 md:p-8 flex flex-col justify-center items-center text-center pointer-events-none">
                                     <h3 className="text-xl md:text-2xl font-serif text-[var(--foreground)] mb-3">
                                         {step.title}
                                     </h3>
