@@ -1,0 +1,109 @@
+{
+    "HomePage": {
+        "title": "Personnalisé",
+        "subtitle": "Bracelets de Montre"
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "shop": "Boutique",
+        "contact": "Contact",
+        "journal": "Journal"
+    },
+    "Customizer": {
+        "title": "Créez le Vôtre",
+        "subtitle": "Expérience Sur Mesure",
+        "description": "Créez un bracelet unique. Choisissez parmi notre sélection de cuirs haut de gamme, de styles de couture et de finitions de boucle.",
+        "step1": "Choisir le Cuir",
+        "step2": "Choisir la Couture",
+        "step3": "Personnaliser",
+        "cta": "Commencer la Personnalisation"
+    },
+    "Process": {
+        "title": "L'Art de l'Artisanat",
+        "subtitle": "Notre Processus",
+        "step1": "Sélection des Matériaux",
+        "desc1": "Nous ne sourcons que les meilleurs cuirs pleine fleur provenant de tanneries renommées.",
+        "step2": "Coupe de Précision",
+        "desc2": "Chaque bracelet est coupé à la main aux dimensions spécifiques, assurant des proportions parfaites.",
+        "step3": "Parage & Amincissement",
+        "desc3": "Le cuir est soigneusement aminci aux extrémités pour assurer un ajustement confortable.",
+        "step4": "Couture à la Main",
+        "desc4": "Utilisation de la technique traditionnelle de point sellier pour une durabilité supérieure.",
+        "step5": "Finitions des Bords",
+        "desc5": "Les bords sont poncés, teints et polis plusieurs fois pour créer une finition lisse."
+    },
+    "FeaturedProducts": {
+        "newCollectionTitle": "Nouvelles Arrivées",
+        "newCollectionDesc": "Explorez nos derniers bracelets faits à la main, avec des textures de cuir uniques et des styles modernes.",
+        "shopNew": "Acheter Nouveautés",
+        "essentialsTitle": "Meilleures Ventes",
+        "essentialsDesc": "Nos bracelets les plus populaires, aimés pour leur durabilité, leur confort et leur élégance classique.",
+        "shopEssentials": "Acheter les Meilleurs"
+    },
+    "Services": {
+        "shipping": "Livraison Mondiale Gratuite",
+        "shippingDesc": "Livraison gratuite pour les commandes de plus de 450 $.",
+        "warranty": "Garantie",
+        "warrantyDesc": "Échange/retour sous 30 jours.",
+        "support": "Contactez-nous",
+        "supportDesc": "Réponse à toutes les questions 24/7",
+        "bespoke": "Bracelet Sur Mesure",
+        "bespokeDesc": "100% Fait main au Vietnam"
+    },
+    "Blog": {
+        "heading": "Derniers Articles",
+        "viewAll": "Voir tous les articles >",
+        "category1": "Guides & Conseils",
+        "title1": "Comment Changer Bracelet Montre : Étape par Étape",
+        "excerpt1": "Apprenez la bonne technique pour changer votre bracelet de montre sans rayer vos cornes. Un guide complet.",
+        "category2": "Savoir-faire",
+        "title2": "Patine Tannage Végétal : Le parcours",
+        "excerpt2": "Les bracelets en cuir à tannage végétal patiné racontent une histoire qui se déroule avec le temps.",
+        "category3": "Tendances",
+        "title3": "Nouveaux Modèles Seiko 2025",
+        "excerpt3": "Les dernières sorties de Seiko en 2025 rendent hommage aux modèles classiques.",
+        "title4": "Entretien du Cuir 101",
+        "excerpt4": "Conseils essentiels pour garder vos bracelets en parfait état pour les années à venir.",
+        "title5": "L'Art de la Couture",
+        "excerpt5": "Pourquoi la couture à la main compte et comment elle affecte la durabilité.",
+        "title6": "Assortir Bracelets et Garde-robe",
+        "excerpt6": "Comment coordonner votre bracelet de montre avec votre tenue pour toute occasion.",
+        "title7": "Histoire des Bracelets en Cuir",
+        "excerpt7": "Une plongée dans l'évolution des bracelets de montre en cuir à travers les décennies.",
+        "title8": "Comprendre les Qualités de Cuir",
+        "excerpt8": "Pleine fleur vs Fleur corrigée : Ce que vous devez savoir avant d'acheter.",
+        "title9": "Guide des Bracelets d'Été",
+        "excerpt9": "Meilleurs matériaux pour le temps chaud : Caoutchouc, Nylon et cuir perforé."
+    },
+    "Instagram": {
+        "follow": "Suivre sur Instagram"
+    },
+    "Marquee": {
+        "item1": "Livraison Gratuite dès 100$",
+        "item2": "Nouvelle Collection Disponible",
+        "item3": "Fait main avec du cuir premium",
+        "item4": "Durable et Écologique"
+    },
+    "Newsletter": {
+        "title": "Newsletter",
+        "subtitle": "Restez Connecté",
+        "description": "Soyez le premier informé des nouvelles collections, des offres exclusives et des histoires en coulisses.",
+        "placeholder": "Entrez votre adresse email",
+        "subscribe": "S'abonner"
+    },
+    "Testimonials": {
+        "title": "Témoignages",
+        "subtitle": "Ce que Disnet Nos Clients",
+        "review1": "La qualité de ces bracelets est exceptionnelle. Le cuir est incroyable et dure des années.",
+        "review2": "J'ai essayé de nombreux bracelets de montre, mais rien ne vaut Aluna. L'artisanat fait toute la différence.",
+        "review3": "Bel emballage, qualité incroyable et livraison rapide. C'est devenu mon cadeau de choix pour les occasions spéciales."
+    },
+    "Footer": {
+        "shop": "Boutique",
+        "company": "Entreprise",
+        "support": "Support",
+        "brandDescription": "Fabriqué avec passion, inspiré par la tradition. Bracelets de montre artisanaux haut de gamme.",
+        "rights": "© 2025 Aluna. Tous droits réservés."
+    }
+}

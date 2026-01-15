@@ -1,0 +1,109 @@
+{
+  "HomePage": {
+    "title": "Custom",
+    "subtitle": "Watch Straps"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "shop": "Shop",
+    "contact": "Contact",
+    "journal": "Journal"
+  },
+  "Customizer": {
+    "title": "Design Your Own",
+    "subtitle": "Bespoke Experience",
+    "description": "Create a strap that is uniquely yours. Choose from our selection of premium leathers, stitching styles, and buckle finishes.",
+    "step1": "Select Leather",
+    "step2": "Choose Stitching",
+    "step3": "Personalize",
+    "cta": "Start Customizing"
+  },
+  "Process": {
+    "title": "The Art of Crafting",
+    "subtitle": "Our Process",
+    "step1": "Material Selection",
+    "desc1": "We source only the finest full-grain leathers from renowned tanneries in France and Italy.",
+    "step2": "Precision Cutting",
+    "desc2": "Each strap is hand-cut to specific measurements, ensuring perfect proportions for your wrist.",
+    "step3": "Skiving & Thinning",
+    "desc3": "The leather is carefully thinned at the ends to ensure a comfortable fit and neat fold.",
+    "step4": "Hand Stitching",
+    "desc4": "Using traditional saddle stitching techniques for superior strength and durability compared to machine stitching.",
+    "step5": "Edge Finishing",
+    "desc5": "Edges are sanded, painted, and polished multiple times to create a smooth, sealed finish."
+  },
+  "FeaturedProducts": {
+    "newCollectionTitle": "New Arrivals",
+    "newCollectionDesc": "Explore our latest handcrafted straps, featuring unique leather textures and modern styles.",
+    "shopNew": "Shop New",
+    "essentialsTitle": "Best Sellers",
+    "essentialsDesc": "Our most popular straps, loved for their durability, comfort, and classic elegance.",
+    "shopEssentials": "Shop Best Sellers"
+  },
+  "Services": {
+    "shipping": "Free Global Shipping",
+    "shippingDesc": "Free shipping for all orders over $450.",
+    "warranty": "Warranty",
+    "warrantyDesc": "Exchange/return within 30 days.",
+    "support": "Get In Touch",
+    "supportDesc": "24/7 answer all questions",
+    "bespoke": "Bespoke Watch Strap",
+    "bespokeDesc": "100% Handmade in VietNam"
+  },
+  "Blog": {
+    "heading": "Newest Posts",
+    "viewAll": "Discover all Posts >",
+    "category1": "Guides & Tips",
+    "title1": "How To Change Watch Strap: Step-by-Step",
+    "excerpt1": "Learn the proper technique to change your watch strap without scratching your lugs. A comprehensive guide for beginners.",
+    "category2": "Craftsmanship",
+    "title2": "Patina Veg-Tanned: Journey the process",
+    "excerpt2": "Patina veg-tanned leather watch straps tell a story that unfolds with time, touch, and experience.",
+    "category3": "Trends & Styles",
+    "title3": "Seiko New Models 2025: Latest Releases",
+    "excerpt3": "Seiko New Models 2025's latest releases pay tribute to classic models and offering something compelling.",
+    "title4": "Leather Care 101",
+    "excerpt4": "Essential tips to keep your leather straps looking pristine for years to come.",
+    "title5": "The Art of Stitching",
+    "excerpt5": "Why hand-stitching matters and how it affects the durability of your strap.",
+    "title6": "Matching Straps to Wardrobe",
+    "excerpt6": "How to coordinate your watch strap with your outfit for any occasion.",
+    "title7": "History of Leather Straps",
+    "excerpt7": "A deep dive into the evolution of leather watch straps through the decades.",
+    "title8": "Understanding Leather Grades",
+    "excerpt8": "Full-grain vs Top-grain: What you need to know before buying your next strap.",
+    "title9": "Summer Watch Strap Guide",
+    "excerpt9": "Best materials and styles for hot weather: Rubber, Nylon, and perforated leather."
+  },
+  "Instagram": {
+    "follow": "Follow on Instagram"
+  },
+  "Marquee": {
+    "item1": "Free Shipping on Orders Over $100",
+    "item2": "New Collection Available",
+    "item3": "Handcrafted with premium leather",
+    "item4": "Sustainable & Eco-Friendly"
+  },
+  "Newsletter": {
+    "title": "Newsletter",
+    "subtitle": "Stay Connected",
+    "description": "Be the first to know about new collections, exclusive offers, and behind-the-scenes stories.",
+    "placeholder": "Enter your email address",
+    "subscribe": "Subscribe"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What Our Customers Say",
+    "review1": "The quality of these straps is exceptional. The leather feels amazing and lasts for years.",
+    "review2": "I've tried many watch straps, but nothing compares to Aluna. The craftsmanship makes all the difference.",
+    "review3": "Beautiful packaging, amazing quality, and fast delivery. This has become my go-to gift for special occasions."
+  },
+  "Footer": {
+    "shop": "Shop",
+    "company": "Company",
+    "support": "Support",
+    "brandDescription": "Crafted with passion, inspired by tradition. Premium handcrafted watch straps.",
+    "rights": "© 2025 Aluna. All rights reserved."
+  }
+}

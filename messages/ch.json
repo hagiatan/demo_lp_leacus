@@ -1,0 +1,109 @@
+{
+    "HomePage": {
+        "title": "定制",
+        "subtitle": "表带"
+    },
+    "Navigation": {
+        "home": "首页",
+        "about": "关于",
+        "shop": "商店",
+        "contact": "联系",
+        "journal": "日志"
+    },
+    "Customizer": {
+        "title": "定制您的专属",
+        "subtitle": "定制体验",
+        "description": "打造独一无二的表带。从我们要选的一流皮革、缝线风格和表扣饰面中进行选择。",
+        "step1": "选择皮革",
+        "step2": "选择缝线",
+        "step3": "个性化",
+        "cta": "开始定制"
+    },
+    "Process": {
+        "title": "工艺艺术",
+        "subtitle": "制作流程",
+        "step1": "选材",
+        "desc1": "我们只从法国和意大利的知名制革厂采购最优质的全粒面皮革。",
+        "step2": "精密切割",
+        "desc2": "每条表带都按特定尺寸手工切割，确保与您的手腕完美比例。",
+        "step3": "削薄",
+        "desc3": "皮革经过精心削薄，确保佩戴舒适且折叠整齐。",
+        "step4": "手工缝合",
+        "desc4": "使用传统的马鞍针法缝合，比机器缝合更牢固耐用。",
+        "step5": "封边",
+        "desc5": "边缘经过多次打磨、上漆和抛光，形成光滑的密封表面。"
+    },
+    "FeaturedProducts": {
+        "newCollectionTitle": "新品上市",
+        "newCollectionDesc": "探索我们最新的手工表带，具有独特的皮革纹理和现代风格。",
+        "shopNew": "购买新品",
+        "essentialsTitle": "畅销商品",
+        "essentialsDesc": "我们最受欢迎的表带，因其耐用性、舒适性和经典优雅而深受喜爱。",
+        "shopEssentials": "购买畅销品"
+    },
+    "Services": {
+        "shipping": "全球免邮",
+        "shippingDesc": "所有订单满450美元包邮。",
+        "warranty": "保修",
+        "warrantyDesc": "30天内退换货。",
+        "support": "联系我们",
+        "supportDesc": "24/7 解答所有问题",
+        "bespoke": "定制表带",
+        "bespokeDesc": "100% 越南手工制作"
+    },
+    "Blog": {
+        "heading": "最新文章",
+        "viewAll": "发现所有文章 >",
+        "category1": "指南与技巧",
+        "title1": "如何更换表带：分步指南",
+        "excerpt1": "学习更换表带的正确技巧，避免由于划伤表耳。初学者综合指南。",
+        "category2": "工艺",
+        "title2": "Patina植鞣革：工艺之旅",
+        "excerpt2": "Patina植鞣革表带讲述了一个随着时间、触感和体验而展开的故事。",
+        "category3": "趋势与风格",
+        "title3": "精工2025新款：最新发布",
+        "excerpt3": "精工2025新款向经典款式致敬，并为资深收藏家提供引人注目的选择。",
+        "title4": "皮革护理 101",
+        "excerpt4": "保持表带多年如新的基本技巧。",
+        "title5": "缝合的艺术",
+        "excerpt5": "为什么手工缝合很重要及其如何影响表带的耐用性。",
+        "title6": "搭配表带与衣橱",
+        "excerpt6": "如何在任何场合协调您的表带与服装。",
+        "title7": "皮革表带的历史",
+        "excerpt7": "深入了解几十年来皮革表带的演变。",
+        "title8": "了解皮革等级",
+        "excerpt8": "全粒面与头层皮：购买下一条表带前您需要了解的知识。",
+        "title9": "夏季表带指南",
+        "excerpt9": "炎热天气的最佳材质：橡胶、尼龙和穿孔皮革。"
+    },
+    "Instagram": {
+        "follow": "关注 Instagram"
+    },
+    "Marquee": {
+        "item1": "订单满100美元免运费",
+        "item2": "新系列上市",
+        "item3": "采用优质皮革手工制作",
+        "item4": "可持续与环保"
+    },
+    "Newsletter": {
+        "title": "通讯",
+        "subtitle": "保持联系",
+        "description": "第一时间了解新系列、独家优惠和幕后故事。",
+        "placeholder": "输入您的电子邮件地址",
+        "subscribe": "订阅"
+    },
+    "Testimonials": {
+        "title": "感言",
+        "subtitle": "客户评价",
+        "review1": "这些表带的质量非常出色。皮革手感极佳，经久耐用。",
+        "review2": "我试过很多表带，但没有什么能比得上Aluna。工艺决定了一切。",
+        "review3": "精美的包装，惊人的质量和快速的交货。这已成为我特别场合的首选礼物。"
+    },
+    "Footer": {
+        "shop": "商店",
+        "company": "公司",
+        "support": "支持",
+        "brandDescription": "充满激情，灵感来自传统。优质手工表带。",
+        "rights": "© 2025 Aluna. 保留所有权利。"
+    }
+}
