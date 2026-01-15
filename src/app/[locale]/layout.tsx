@@ -26,9 +26,34 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Leacus. | Luxury Fragrances & Home Essentials",
-  description:
-    "Discover exceptional fragrances and artisanal home essentials crafted for those who appreciate the finer things in life.",
+  title: "Leacus. | Luxury Leather Straps & Accessories",
+  description: "Discover bespoke leather straps and artisanal accessories, meticulously handcrafted for those who appreciate timeless elegance and durability.",
+  keywords: ["leather straps", "watch straps", "handcrafted", "luxury accessories", "bespoke leather", "Leacus"],
+  openGraph: {
+    title: "Leacus. | Luxury Leather Straps & Accessories",
+    description: "Discover bespoke leather straps and artisanal accessories, meticulously handcrafted for those who appreciate timeless elegance and durability.",
+    url: "https://leacus.vercel.app",
+    siteName: "Leacus.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1444881421460-d838c3b98f95?q=80&w=2839&auto=format&fit=crop&ixlib=rb-4.0.3",
+        width: 1200,
+        height: 630,
+        alt: "Leacus. Luxury Leather Brand",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leacus. | Luxury Leather Straps & Accessories",
+    description: "Discover bespoke leather straps and artisanal accessories, meticulously handcrafted for those who appreciate timeless elegance and durability.",
+    images: ["https://images.unsplash.com/photo-1444881421460-d838c3b98f95?q=80&w=2839&auto=format&fit=crop&ixlib=rb-4.0.3"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default async function RootLayout({
