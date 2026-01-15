@@ -54,7 +54,7 @@ export default function InstagramFeed() {
                 {/* Row 1 - Scroll Left */}
                 <div className="relative w-full overflow-hidden">
                     <motion.div
-                        className="flex gap-4 md:gap-8 min-w-max will-change-transform"
+                        className="flex gap-4 md:gap-8 w-max"
                         animate={{ x: ["0%", "-33.33%"] }}
                         transition={{
                             repeat: Infinity,
@@ -68,7 +68,7 @@ export default function InstagramFeed() {
                                 href="https://instagram.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="relative group block w-[200px] h-[200px] md:w-[300px] md:h-[300px] aspect-square flex-shrink-0 overflow-hidden"
+                                className="relative group block w-[200px] h-[200px] md:w-[300px] md:h-[300px] aspect-square flex-shrink-0 overflow-hidden bg-[var(--section-bg)]"
                             >
                                 <Image
                                     src={post.image}
@@ -89,7 +89,7 @@ export default function InstagramFeed() {
                 {/* Row 2 - Scroll Right */}
                 <div className="relative w-full overflow-hidden">
                     <motion.div
-                        className="flex gap-4 md:gap-8 min-w-max will-change-transform"
+                        className="flex gap-4 md:gap-8 w-max"
                         animate={{ x: ["-33.33%", "0%"] }}
                         transition={{
                             repeat: Infinity,
@@ -103,7 +103,7 @@ export default function InstagramFeed() {
                                 href="https://instagram.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="relative group block w-[200px] h-[200px] md:w-[300px] md:h-[300px] aspect-square flex-shrink-0 overflow-hidden"
+                                className="relative group block w-[200px] h-[200px] md:w-[300px] md:h-[300px] aspect-square flex-shrink-0 overflow-hidden bg-[var(--section-bg)]"
                             >
                                 <Image
                                     src={post.image}
