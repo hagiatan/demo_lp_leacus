@@ -23,12 +23,16 @@ export default function Newsletter() {
 
       {/* Right: Form & Links */}
       <div className="w-full lg:w-2/3 flex flex-col justify-center px-6 md:px-12 lg:px-16 py-16">
-        <form className="flex flex-col md:flex-row gap-0 max-w-2xl border-b border-[var(--card-border)] pb-2 mb-8">
+        <form className="flex flex-col md:flex-row gap-0 max-w-2xl border-b border-[var(--card-border)] pb-2 mb-8 relative group">
           <input
             type="email"
             placeholder={t('placeholder')}
-            className="flex-1 py-4 bg-transparent text-xl md:text-2xl font-serif placeholder:text-[var(--text-muted)] text-[var(--foreground)] outline-none"
+            className="flex-1 py-4 bg-transparent text-xl md:text-2xl font-serif placeholder:text-[var(--text-muted)] text-[var(--foreground)] outline-none peer"
           />
+
+          {/* Animated Underline */}
+          <span className="absolute bottom-[-1px] left-0 w-0 h-[1px] bg-[var(--foreground)] transition-all duration-500 ease-out group-focus-within:w-full" />
+
           <button
             type="submit"
             className="py-4 px-8 text-xs uppercase tracking-[0.2em] font-medium text-[var(--foreground)] hover:text-[var(--text-secondary)] transition-colors text-right"

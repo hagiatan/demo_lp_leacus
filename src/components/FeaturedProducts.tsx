@@ -10,17 +10,9 @@ import { Product } from "@/data/products";
 
 export default function FeaturedProducts() {
   const t = useTranslations('FeaturedProducts');
-  const [products, setProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setProducts(getFeaturedProducts());
-      setIsLoading(false);
-    }, 800);
-
-    return () => clearTimeout(timer);
-  }, []);
+  // Direct access to data for better performance (SSG/SSR friendly)
+  const products = getFeaturedProducts();
+  const isLoading = false;
 
   // Split products into two groups for two sections
   const firstGroup = products.slice(0, 2);
@@ -62,10 +54,25 @@ export default function FeaturedProducts() {
         </div>
       </section>
 
-      {/* Section 2: Essentials */}
+      {/* Section 2: Essentials (Symmetrical Layout: Products Left, Text Right) */}
       <section className="flex flex-col lg:flex-row border-b border-[var(--card-border)]">
-        {/* Left: Text */}
-        <div className="w-full lg:w-1/3 px-6 md:px-12 lg:px-16 py-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-[var(--card-border)]">
+        {/* Left: Products (Swapped) */}
+        <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--card-border)] border-b lg:border-b-0 lg:border-r border-[var(--card-border)]">
+          {isLoading
+            ? Array.from({ length: 2 }).map((_, index) => (
+              <div key={`skeleton-2-${index}`} className="p-6 h-full">
+                <ProductCardSkeleton />
+              </div>
+            ))
+            : secondGroup.map((product, index) => (
+              <div key={product.id} className="p-6 h-full">
+                <ProductCard product={product} index={index + 2} />
+              </div>
+            ))}
+        </div>
+
+        {/* Right: Text (Swapped) */}
+        <div className="w-full lg:w-1/3 px-6 md:px-12 lg:px-16 py-16 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif text-[var(--foreground)] mb-4 leading-tight">
             {t('essentialsTitle')}
           </h2>
@@ -78,21 +85,6 @@ export default function FeaturedProducts() {
           >
             {t('shopEssentials')}
           </Link>
-        </div>
-
-        {/* Right: Products */}
-        <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--card-border)]">
-          {isLoading
-            ? Array.from({ length: 2 }).map((_, index) => (
-              <div key={`skeleton-2-${index}`} className="p-6 h-full">
-                <ProductCardSkeleton />
-              </div>
-            ))
-            : secondGroup.map((product, index) => (
-              <div key={product.id} className="p-6 h-full">
-                <ProductCard product={product} index={index + 2} />
-              </div>
-            ))}
         </div>
       </section>
     </>

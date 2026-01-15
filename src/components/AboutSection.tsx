@@ -32,17 +32,20 @@ export default function AboutSection() {
         </Link>
       </div>
 
-      {/* Right: Image */}
+      {/* Right: Video */}
       <div className="w-full lg:w-2/3 relative min-h-[500px] lg:min-h-[600px] overflow-hidden group">
-        <Image
-          src="/images/img1.jpg"
-          alt="Artisan crafting leather"
-          fill
-          sizes="(max-width: 1024px) 100vw, 66vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
-          placeholder="blur"
-          blurDataURL={blurDataURL}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/img1.jpg"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        >
+          <source src="/videos/story.mp4" type="video/mp4" />
+        </video>
+        {/* Cinematic dark overlay for better contrast if needed, but keeping it clean for now */}
+        <div className="absolute inset-0 bg-black/10" />
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ export default function MarqueeBanner() {
   return (
     <div className="border-b border-[var(--card-border)] bg-[var(--background)] text-[var(--foreground)] py-4 overflow-hidden">
       <motion.div
-        className="flex whitespace-nowrap"
+        className="flex whitespace-nowrap will-change-transform"
         animate={{ x: [0, -1000] }}
         transition={{
           x: {

@@ -81,7 +81,7 @@ export default function CraftsmanshipProcess() {
             </div>
 
             {/* Swiper Container */}
-            <div className="relative h-[500px] w-full flex items-center justify-center perspective-[1000px]">
+            <div className="relative h-[600px] w-full flex items-center justify-center perspective-[1000px]">
                 {/* Navigation - Absolute Center Vertical */}
                 <button
                     onClick={prevSlide}
@@ -116,28 +116,27 @@ export default function CraftsmanshipProcess() {
 
                         if (position === 0) {
                             xOff = "0%";
-                            scale = 1;
+                            scale = 1.15; // Increased scale for prominence
                             opacity = 1;
                             zIndex = 10;
                         } else if (position === 1) {
-                            xOff = "100%"; // To the right (desktop) - actually lets use pixels or smaller % for overlap look
-                            xOff = "60%";
+                            xOff = "55%"; // Slightly tighter overlap
                             scale = 0.85;
-                            opacity = 0.6;
+                            opacity = 0.4; // Faded
                             zIndex = 5;
                         } else if (position === -1) {
-                            xOff = "-60%";
+                            xOff = "-55%";
                             scale = 0.85;
-                            opacity = 0.6;
+                            opacity = 0.4;
                             zIndex = 5;
                         } else if (position === 2) {
-                            xOff = "120%";
-                            scale = 0.7;
-                            opacity = 0; // fade out
+                            xOff = "100%";
+                            scale = 0.6;
+                            opacity = 0;
                             zIndex = 1;
                         } else if (position === -2) {
-                            xOff = "-120%";
-                            scale = 0.7;
+                            xOff = "-100%";
+                            scale = 0.6;
                             opacity = 0;
                             zIndex = 1;
                         }
@@ -164,9 +163,10 @@ export default function CraftsmanshipProcess() {
                                     zIndex: zIndex
                                 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                                className="absolute top-0 left-0 right-0 mx-auto w-[85%] md:w-[60%] lg:w-[50%] h-full bg-white shadow-2xl rounded-sm overflow-hidden flex flex-col touch-pan-y"
+                                className="absolute top-0 left-0 right-0 mx-auto w-[85%] md:w-[65%] lg:w-[55%] h-[480px] bg-white shadow-2xl rounded-sm overflow-hidden flex flex-col touch-pan-y"
                                 style={{
-                                    transformOrigin: 'center center'
+                                    transformOrigin: 'center center',
+                                    filter: isCenter ? 'blur(0px)' : 'blur(2px)'
                                 }}
                             >
                                 <div className="relative h-[65%] w-full bg-[var(--section-bg)] pointer-events-none">
@@ -194,20 +194,24 @@ export default function CraftsmanshipProcess() {
                 </div>
             </div>
 
-            {/* Loading/Progress Bar */}
-            <div className="max-w-2xl mx-auto px-6 mt-8">
-                <div className="w-full h-1 bg-[var(--card-border)] rounded-full overflow-hidden">
+            {/* Progress Bar - Minimalist Style */}
+            <div className="max-w-sm mx-auto px-6 mt-24 flex items-center gap-5">
+                <span className="text-sm font-serif text-[var(--foreground)] w-6 text-right tabular-nums">
+                    0{currentIndex + 1}
+                </span>
+
+                <div className="flex-1 h-[2px] bg-[var(--card-border)] relative overflow-hidden rounded-full">
                     <motion.div
-                        className="h-full bg-[var(--foreground)]"
+                        className="absolute top-0 left-0 h-full bg-[var(--foreground)]"
                         initial={{ width: "0%" }}
                         animate={{ width: `${((currentIndex + 1) / steps.length) * 100}%` }}
-                        transition={{ type: "spring", stiffness: 100, damping: 20 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     />
                 </div>
-                <div className="flex justify-between mt-2 text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">
-                    <span>Start</span>
-                    <span>{Math.round(((currentIndex + 1) / steps.length) * 100)}%</span>
-                </div>
+
+                <span className="text-sm font-serif text-[var(--text-secondary)] w-6 tabular-nums opacity-50">
+                    0{steps.length}
+                </span>
             </div>
         </section>
     );
